@@ -21,6 +21,9 @@ jobs:
     
     - name: Install Chrome
       uses: browser-actions/setup-chrome@v1
+      with:
+        chrome-version: stable
+      id: setup-chrome
     
     - name: Install dependencies
       run: |
